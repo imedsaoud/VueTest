@@ -5,7 +5,7 @@ URL du site : https://sabou-imed.netlify.com/
 ### Groupe
 
 - Imed Saoud
-- Clément Sabourin
+- Clement Sabourin
 
 ## Prologue
 
