@@ -1,42 +1,81 @@
-{
+
+ 
+ {
   "choices": {
     "1" :{
-      "title": "Choisissez l'equipement adapté",
+      "video": "../assets/img/beach.mp4",
+      "bearGryll":"futur img de bear",
+      "title": "Au cours de cette mission, nous allons traverser des cours d'eau rapide et une jungle rempli d'une faune très dangereuse",
       "actions": [
         {
-          "label": "Grappin",
-          "explication": "le grappin ....",
-          "to": 2
-        },
-        {
-          "label": "Lance-pierre",
-          "explication": "le lance pierre ....",
-          "to": 2
+          "label": "Continuer l'exploration",
+          "to": 1.1
         }
       ]
     },
-    "2": {
-      "title": "Choisissez le bon chemin",
+    "1.1" :{
+      "img": "../assets/img/Step4-min.jpg",
+      "title": "Nous allons donc dans un premier temps, choisir l'équipement qui pourra nous être le plus utile pour braver ces dangers ! Quel équipement voulez-vous prendre ?",
+      "actions": [
+        {
+          "label": "Grappin",
+          "explication": "le grappin pourrait nous sauvez si nous nous retrouvions dans un cul de sac",
+          "to": 2,
+          "weapon": "Grappin"
+        },
+        {
+          "label": "Lance-pierre",
+          "explication": "le lance pierre nous permettrez d'effrayer les prédateurs que nous pourrions croiser sur notre chemin",
+          "to": 2,
+          "weapon": "Lance-pierre"
+        }
+      ]
+    },
+    "2" :{
+      "img": "../assets/img/photo-1516528387618-afa90b13e000.jpeg",
+      "bearGryll":"futur img de bear",
+      "title": "Soit nous utilisons la machette et nous frayons un chemin à travers la jungle, tout en sachant qu'il y a des jaguars ou des serpents OU nous suivons la rivière, qui est un chemin plus rapide, mais dangereux par ses crocodiles et ses cours d'eau rapide !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 2.1
+        }
+      ]
+    },
+    "2.1": {
+      "img": "../assets/img/riviere-min.jpg",
+      "title": "C'est maintenant a vous de décidez quel chemin nous allons emprunter",
       "actions": [
         {
           "label": "Jungle",
           "explication": "la jungle  ....",
-          "to": 6
+          "to": 7
         },
         {
           "label": "Rivière",
-          "explication": "le Rivière  ....",
-          "to": 4
+          "explication": "la Rivière  ....",
+          "to": 3
         }
       ]
     },
-    "3": {
-      "title": "Decidez vous rapidement !",
+    "3" :{
+      "img": "../assets/img/croco2-min.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Oh attendez ! Voilà pourquoi nous devons faire attention dans la rivière, regardez un crocodile qui prend le soleil en plein milieu de notre chemin !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 3.4
+        }
+      ]
+    },
+    "3.1": {
+      "title": "Il va falloir faire très attention ! Nous avons 2 possibilitées: Soit nous passons discrétement en apner à coté de lui, soit nous l'effrayons afin qu'il se cache dans les feuillages ",
       "actions": [
         {
           "label": "Apner",
           "explication": "Passez en apner ....",
-          "to": 4
+          "to": 3.2
         },
         {
           "label": "Effrayer",
@@ -45,28 +84,74 @@
         }
       ]
     },
-    "3.1": {
-      "title": "Decidez vous rapidement !",
+    "3.2" :{
+      "img": "../assets/img/image.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Le crocodile nous a attaquer ! Heureusement que nous avons réussi à lui maitriser la machoire",
       "actions": [
         {
-          "label": "Passez discrètement",
-          "explication": "Passez en apner ....",
-          "to": "lost"
-        },
+          "label": "Continuer l'exploration",
+          "to": 5
+        }
+      ]
+    },
+    "3.4" :{
+      "img": "../assets/img/croco89.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "En choisissant le lance-pierre vous avez faire un très bon choix, nous allons pouvoir l'éffrayer en lui lançant un projectille.",
+      "actions": [
         {
-          "label": "Utiliser le lance pierre",
-          "explication": "Faire peur au croco ....",
+          "label": "Continuer l'exploration",
+          "to": 4
+        }
+      ]
+    },
+    "4" :{
+      "img": "../assets/img/jungle93.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Nous avons besoins d'energie, allons chercher de la nourriture !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
           "to": 4.1
         }
       ]
     },
-    "4": {
-      "title": "Il faut vous decidez maintenant !",
+    "4.1": {
+      "img": "../assets/img/termite92.jpeg",
+      "title": "Nous avons le choix entre un nid de thermites ou une larve (véritable concentré d'energie)",
+      "actions": [
+        {
+          "label": "nid de thermites",
+          "explication": "Les termites ....",
+          "to": 6
+        },
+        {
+          "label": "Larve",
+          "explication": "Les larves ....",
+          "to": 6
+        }
+      ]
+    },
+    "5" :{
+      "img": "../assets/img/riviere92.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Malheureusement le courant nous a emporter en plein milieu de la mer, nous allons désormais devoir rejoindre le rivage !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 5.1
+        }
+      ]
+    },
+    "5.1": {
+      "img": "../assets/img/riviere92.jpg",
+      "title": "Pour rejoindre la terre nous devons prendre une nouvelle décision ! Alors que voulez-vous faire ?",
       "actions": [
         {
           "label": "Longer la rive",
           "explication": "Longer la rive ....",
-          "to": 6
+          "to": 7
         },
         {
           "label": "Nager à contre courant",
@@ -75,52 +160,97 @@
         }
       ]
     },
-    "4.1": {
-      "title": "Quel nourriture voulez-vous deguster",
+    "6" :{
+      "img": "../assets/img/Canyon-min.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Mince ! Nous sommes desormais bloqué par un profond précipice, mais notre destination ce trouve dans cette direction. Nous devons trouver un moyen passer !",
       "actions": [
         {
-          "label": "Termite",
-          "explication": "Les termites ....",
-          "to": 5
-        },
-        {
-          "label": "Larve",
-          "explication": "Les larves ....",
-          "to": 5
+          "label": "Continuer l'exploration",
+          "to": 6.1
         }
       ]
     },
-    "5": {
-      "title": "Quel chemin devons-nous emprunter , prenez une décision le temps presse !",
+    "6.1": {
+      "title": "Nous pouvons passer sur un tronc (mais il y a de forte chance qu'il soit pourrit) ou nous pouvons traverser sur une liane comme tarzan. Prenez vite une décision",
+      "img": "../assets/img/Canyon-min.jpg",
       "actions": [
         {
           "label": "Liane",
           "explication": "Les Lianes ....",
-          "to": 7
+          "to": 6.2
         },
         {
           "label": "Tronc",
           "explication": "Le tronc ....",
-          "to": "explication/1"
+          "to": 9
         }
       ]
     },
-    "6": {
-      "title": "Nous devons réagir au plus vite !",
+    "6.2" :{
+      "img": "../assets/img/Avancement-min.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Ouhou super ca a marché ! Continuons dans cette direction",
       "actions": [
         {
-          "label": "Suivre le cris des singes",
-          "explication": "Les Lianes ....",
-          "to": "lost"
-        },
-        {
-          "label": "Monter à l'arbre",
-          "explication": "Monter à L'arbre ....",
-          "to": 5
+          "label": "Continuer l'exploration",
+          "to": 6.3
         }
       ]
     },
-    "7": {
+    "6.3" :{
+      "img": "../assets/img/CriDoctor-min.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Vous entendez ?! On dirais la voie du docteur, depêchons nous de la suivre !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 8
+        }
+      ]
+    },
+    "7" :{
+      "img": "../assets/img/campement-min.jpg",
+      "bearGryll":"futur img de bear",
+      "song": "../assets/img/singe.mp3",
+      "title": "Regardez ! Des traces toute fraiches d'un campament ! Il a été saccacher, surement par les singes hurleur !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 7.1
+        }
+      ]
+    },
+    "7.1": {
+      "img": "../assets/img/Pluie-min.jpg",
+      "song": "../assets/img/singe.mp3",
+      "title": "Quel chemin allons nous suivre désormais ? Nous avons 2 options, soit monter a l'arbre afin d'avoir une vue d'ensemble sur la forêt, soit suivre les cris de singes qui semble être agité par quelque chose qui les dérangent.",
+      "actions": [
+        {
+          "label": "Monter à l'arbe",
+          "explication": "Les Lianes ....",
+          "to": 7.2
+        },
+        {
+          "label": "Suivre les cris de singes",
+          "explication": "Monter à L'arbre ....",
+          "to": "lost"
+        }
+      ]
+    },
+    "7.2" :{
+      "img": "../assets/img/Fumer-min.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Oh là-bas, regardez ! De la fumée qui s'échappe ! Surement le nouveau campement du docteur, je pense qu'il vaut mieux suivre cette direction !",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 6
+        }
+      ]
+    },
+    "8": {
+      "img": "../assets/img/Docteur-min.jpg",
       "title": "Le docteur est sauver ! Il faut ramener les medicaments au village",
       "actions": [
         {
@@ -134,11 +264,17 @@
           "to": "lost"
         }
       ]
-    }
-  },
-  "intrigue": {
-    "1": {
-      "content": "lorem"
+    },
+    "9" :{
+      "img": "../assets/img/grappin92.jpg",
+      "bearGryll":"futur img de bear",
+      "title": "Le tronc est casser , heureusement nous avons le grapin",
+      "actions": [
+        {
+          "label": "Continuer l'exploration",
+          "to": 6.3
+        }
+      ]
     }
   }
 }

@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/vue/dist/vue.common.dev.js":[function(require,module,exports) {
+},{"./../img/images.jpeg":[["images.89b676b1.jpeg","assets/img/images.jpeg"],"assets/img/images.jpeg"],"./../img/Bear-Grylls.jpeg":[["Bear-Grylls.f7d42df6.jpeg","assets/img/Bear-Grylls.jpeg"],"assets/img/Bear-Grylls.jpeg"],"./../img/lostt.jpg":[["lostt.cfe3f827.jpg","assets/img/lostt.jpg"],"assets/img/lostt.jpg"],"./../img/win.jpg":[["win.c55cbda5.jpg","assets/img/win.jpg"],"assets/img/win.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/vue/dist/vue.common.dev.js":[function(require,module,exports) {
 var global = arguments[3];
 /*!
  * Vue.js v2.6.10
@@ -15066,25 +15066,35 @@ exports.default = void 0;
 //
 //
 //
+//
+//
 var _default = {};
 exports.default = _default;
-        var $d61e89 = exports.default || module.exports;
+        var $4e2495 = exports.default || module.exports;
       
-      if (typeof $d61e89 === 'function') {
-        $d61e89 = $d61e89.options;
+      if (typeof $4e2495 === 'function') {
+        $4e2495 = $4e2495.options;
       }
     
         /* template */
-        Object.assign($d61e89, (function () {
+        Object.assign($4e2495, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-headers" },
     [
       _c("br"),
+      _vm._v(" "),
+      _c("h1", [_vm._v("Opération sauvetage en pleine jungle")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Une médecin en mission humanitaire est portée disparue alors qu'elle livrait des vaccins contre la malaria aux enfants. À vous d'aider Bear à la retrouver dans la jungle"
+        )
+      ]),
       _vm._v(" "),
       _c("router-link", { staticClass: "button", attrs: { to: "/game/1" } }, [
         _vm._v("Demarrer l'aventure")
@@ -15113,9 +15123,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$d61e89', $d61e89);
+            api.createRecord('$4e2495', $4e2495);
           } else {
-            api.reload('$d61e89', $d61e89);
+            api.reload('$4e2495', $4e2495);
           }
         }
 
@@ -15126,102 +15136,209 @@ render._withStripped = true
 module.exports = {
   "choices": {
     "1": {
-      "title": "Choisissez l'equipement adapté",
+      "video": "../assets/img/beach.mp4",
+      "bearGryll": "futur img de bear",
+      "title": "Au cours de cette mission, nous allons traverser des cours d'eau rapide et une jungle rempli d'une faune très dangereuse",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 1.1
+      }]
+    },
+    "1.1": {
+      "img": "../assets/img/Step4-min.jpg",
+      "title": "Nous allons donc dans un premier temps, choisir l'équipement qui pourra nous être le plus utile pour braver ces dangers ! Quel équipement voulez-vous prendre ?",
       "actions": [{
         "label": "Grappin",
-        "explication": "le grappin ....",
-        "to": 2
+        "explication": "le grappin pourrait nous sauvez si nous nous retrouvions dans un cul de sac",
+        "to": 2,
+        "weapon": "Grappin"
       }, {
         "label": "Lance-pierre",
-        "explication": "le lance pierre ....",
-        "to": 2
+        "explication": "le lance pierre nous permettrez d'effrayer les prédateurs que nous pourrions croiser sur notre chemin",
+        "to": 2,
+        "weapon": "Lance-pierre"
       }]
     },
     "2": {
-      "title": "Choisissez le bon chemin",
+      "img": "../assets/img/photo-1516528387618-afa90b13e000.jpeg",
+      "bearGryll": "futur img de bear",
+      "title": "Soit nous utilisons la machette et nous frayons un chemin à travers la jungle, tout en sachant qu'il y a des jaguars ou des serpents OU nous suivons la rivière, qui est un chemin plus rapide, mais dangereux par ses crocodiles et ses cours d'eau rapide !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 2.1
+      }]
+    },
+    "2.1": {
+      "img": "../assets/img/riviere-min.jpg",
+      "title": "C'est maintenant a vous de décidez quel chemin nous allons emprunter",
       "actions": [{
         "label": "Jungle",
         "explication": "la jungle  ....",
-        "to": 6
+        "to": 7
       }, {
         "label": "Rivière",
-        "explication": "le Rivière  ....",
-        "to": 4
+        "explication": "la Rivière  ....",
+        "to": 3
       }]
     },
     "3": {
-      "title": "Decidez vous rapidement !",
+      "img": "../assets/img/croco2-min.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Oh attendez ! Voilà pourquoi nous devons faire attention dans la rivière, regardez un crocodile qui prend le soleil en plein milieu de notre chemin !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 3.4
+      }]
+    },
+    "3.1": {
+      "title": "Il va falloir faire très attention ! Nous avons 2 possibilitées: Soit nous passons discrétement en apner à coté de lui, soit nous l'effrayons afin qu'il se cache dans les feuillages ",
       "actions": [{
         "label": "Apner",
         "explication": "Passez en apner ....",
-        "to": 4
+        "to": 3.2
       }, {
         "label": "Effrayer",
         "explication": "Faire peur au croco ....",
         "to": 4.1
       }]
     },
-    "3.1": {
-      "title": "Decidez vous rapidement !",
+    "3.2": {
+      "img": "../assets/img/image.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Le crocodile nous a attaquer ! Heureusement que nous avons réussi à lui maitriser la machoire",
       "actions": [{
-        "label": "Passez discrètement",
-        "explication": "Passez en apner ....",
-        "to": "lost"
-      }, {
-        "label": "Utiliser le lance pierre",
-        "explication": "Faire peur au croco ....",
-        "to": 4.1
+        "label": "Continuer l'exploration",
+        "to": 5
+      }]
+    },
+    "3.4": {
+      "img": "../assets/img/croco89.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "En choisissant le lance-pierre vous avez faire un très bon choix, nous allons pouvoir l'éffrayer en lui lançant un projectille.",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 4
       }]
     },
     "4": {
-      "title": "Il faut vous decidez maintenant !",
+      "img": "../assets/img/jungle93.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Nous avons besoins d'energie, allons chercher de la nourriture !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 4.1
+      }]
+    },
+    "4.1": {
+      "img": "../assets/img/termite92.jpeg",
+      "title": "Nous avons le choix entre un nid de thermites ou une larve (véritable concentré d'energie)",
+      "actions": [{
+        "label": "nid de thermites",
+        "explication": "Les termites ....",
+        "to": 6
+      }, {
+        "label": "Larve",
+        "explication": "Les larves ....",
+        "to": 6
+      }]
+    },
+    "5": {
+      "img": "../assets/img/riviere92.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Malheureusement le courant nous a emporter en plein milieu de la mer, nous allons désormais devoir rejoindre le rivage !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 5.1
+      }]
+    },
+    "5.1": {
+      "img": "../assets/img/riviere92.jpg",
+      "title": "Pour rejoindre la terre nous devons prendre une nouvelle décision ! Alors que voulez-vous faire ?",
       "actions": [{
         "label": "Longer la rive",
         "explication": "Longer la rive ....",
-        "to": 6
+        "to": 7
       }, {
         "label": "Nager à contre courant",
         "explication": "Nager à contre courant ....",
         "to": "lost"
       }]
     },
-    "4.1": {
-      "title": "Quel nourriture voulez-vous deguster",
+    "6": {
+      "img": "../assets/img/Canyon-min.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Mince ! Nous sommes desormais bloqué par un profond précipice, mais notre destination ce trouve dans cette direction. Nous devons trouver un moyen passer !",
       "actions": [{
-        "label": "Termite",
-        "explication": "Les termites ....",
-        "to": 5
-      }, {
-        "label": "Larve",
-        "explication": "Les larves ....",
-        "to": 5
+        "label": "Continuer l'exploration",
+        "to": 6.1
       }]
     },
-    "5": {
-      "title": "Quel chemin devons-nous emprunter , prenez une décision le temps presse !",
+    "6.1": {
+      "title": "Nous pouvons passer sur un tronc (mais il y a de forte chance qu'il soit pourrit) ou nous pouvons traverser sur une liane comme tarzan. Prenez vite une décision",
+      "img": "../assets/img/Canyon-min.jpg",
       "actions": [{
         "label": "Liane",
         "explication": "Les Lianes ....",
-        "to": 7
+        "to": 6.2
       }, {
         "label": "Tronc",
         "explication": "Le tronc ....",
-        "to": "explication/1"
+        "to": 9
       }]
     },
-    "6": {
-      "title": "Nous devons réagir au plus vite !",
+    "6.2": {
+      "img": "../assets/img/Avancement-min.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Ouhou super ca a marché ! Continuons dans cette direction",
       "actions": [{
-        "label": "Suivre le cris des singes",
-        "explication": "Les Lianes ....",
-        "to": "lost"
-      }, {
-        "label": "Monter à l'arbre",
-        "explication": "Monter à L'arbre ....",
-        "to": 5
+        "label": "Continuer l'exploration",
+        "to": 6.3
+      }]
+    },
+    "6.3": {
+      "img": "../assets/img/CriDoctor-min.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Vous entendez ?! On dirais la voie du docteur, depêchons nous de la suivre !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 8
       }]
     },
     "7": {
+      "img": "../assets/img/campement-min.jpg",
+      "bearGryll": "futur img de bear",
+      "song": "../assets/img/singe.mp3",
+      "title": "Regardez ! Des traces toute fraiches d'un campament ! Il a été saccacher, surement par les singes hurleur !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 7.1
+      }]
+    },
+    "7.1": {
+      "img": "../assets/img/Pluie-min.jpg",
+      "song": "../assets/img/singe.mp3",
+      "title": "Quel chemin allons nous suivre désormais ? Nous avons 2 options, soit monter a l'arbre afin d'avoir une vue d'ensemble sur la forêt, soit suivre les cris de singes qui semble être agité par quelque chose qui les dérangent.",
+      "actions": [{
+        "label": "Monter à l'arbe",
+        "explication": "Les Lianes ....",
+        "to": 7.2
+      }, {
+        "label": "Suivre les cris de singes",
+        "explication": "Monter à L'arbre ....",
+        "to": "lost"
+      }]
+    },
+    "7.2": {
+      "img": "../assets/img/Fumer-min.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Oh là-bas, regardez ! De la fumée qui s'échappe ! Surement le nouveau campement du docteur, je pense qu'il vaut mieux suivre cette direction !",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 6
+      }]
+    },
+    "8": {
+      "img": "../assets/img/Docteur-min.jpg",
       "title": "Le docteur est sauver ! Il faut ramener les medicaments au village",
       "actions": [{
         "label": "Continuer",
@@ -15232,14 +15349,28 @@ module.exports = {
         "explication": "Monter à L'arbre ....",
         "to": "lost"
       }]
-    }
-  },
-  "intrigue": {
-    "1": {
-      "content": "lorem"
+    },
+    "9": {
+      "img": "../assets/img/grappin92.jpg",
+      "bearGryll": "futur img de bear",
+      "title": "Le tronc est casser , heureusement nous avons le grapin",
+      "actions": [{
+        "label": "Continuer l'exploration",
+        "to": 6.3
+      }]
     }
   }
 };
+},{}],"services/GameService.js":[function(require,module,exports) {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var GameService = function GameService() {
+  _classCallCheck(this, GameService);
+
+  this.weapon = '';
+};
+
+module.exports = new GameService();
 },{}],"components/Game.vue":[function(require,module,exports) {
 "use strict";
 
@@ -15250,8 +15381,27 @@ exports.default = void 0;
 
 var _data2 = _interopRequireDefault(require("../services/data.json"));
 
+var _GameService = _interopRequireDefault(require("../services/GameService.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -15262,12 +15412,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   data: function data() {
     return {
+      services: _GameService.default,
       step: _data2.default.choices[this.$route.params.id]
     };
   },
-  mounted: function mounted() {
-    console.log();
-  },
+  mounted: function mounted() {},
   watch: {
     '$route': function $route(to, from) {
       this.step = _data2.default.choices[this.$route.params.id];
@@ -15275,11 +15424,27 @@ var _default = {
   },
   methods: {
     doEffect: function doEffect(action) {
+      if (action.weapon) {
+        _GameService.default.weapon = action.weapon;
+      }
+
       if (action.to) {
         this.$router.push({
           params: {
             id: action.to
           }
+        });
+      }
+
+      if (_GameService.default.weapon !== 'Grappin' && this.$route.params.id === 3) {
+        this.$router.push({
+          path: '/game/3.4'
+        });
+      }
+
+      if (_GameService.default.weapon !== 'Grappin' && this.$route.params.id === 9) {
+        this.$router.push({
+          path: '/lost'
         });
       }
 
@@ -15294,44 +15459,75 @@ var _default = {
           path: '/lost'
         });
       }
+
+      console.log(this.$route.params.id);
+      console.log(_GameService.default.weapon);
     }
   }
 };
 exports.default = _default;
-        var $25baf9 = exports.default || module.exports;
+        var $9b8df3 = exports.default || module.exports;
       
-      if (typeof $25baf9 === 'function') {
-        $25baf9 = $25baf9.options;
+      if (typeof $9b8df3 === 'function') {
+        $9b8df3 = $9b8df3.options;
       }
     
         /* template */
-        Object.assign($25baf9, (function () {
+        Object.assign($9b8df3, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", [_vm._v(_vm._s(_vm.step.title))]),
-      _vm._v(" "),
-      _vm._l(_vm.step.actions, function(action) {
-        return _c(
-          "div",
-          {
-            key: action.to,
-            on: {
-              click: function($event) {
-                return _vm.doEffect(action)
+  return _c("transition", { attrs: { name: "slode" } }, [
+    _c("div", { staticClass: "big-header" }, [
+      _c(
+        "div",
+        { staticClass: "buttonChoice" },
+        _vm._l(_vm.step.actions, function(action) {
+          return _c(
+            "div",
+            {
+              staticClass: "button",
+              on: {
+                click: function($event) {
+                  return _vm.doEffect(action)
+                }
               }
-            }
-          },
-          [_vm._v(_vm._s(action.label))]
-        )
-      })
-    ],
-    2
-  )
+            },
+            [_vm._v(_vm._s(action.label))]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c(
+        "audio",
+        {
+          attrs: { autoplay: "", src: "/heros.4b9ce738.mp3" }
+        },
+        [
+          _vm._v(
+            "\n            Your browser does not support the\n            "
+          ),
+          _c("code", [_vm._v("audio")]),
+          _vm._v(" element.\n     ")
+        ]
+      ),
+      _vm._v(" "),
+      _c("video", { attrs: { autoplay: "" } }, [
+        _c("source", {
+          attrs: {
+            src: "/beach.d6f875c6.mp4",
+            type: "video/mp4"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("img", { attrs: { src: _vm.step.img, alt: "" } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "title" }, [_vm._v(_vm._s(_vm.step.title))])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -15340,7 +15536,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-25baf9",
+            _scopeId: null,
             functional: undefined
           };
         })());
@@ -15353,20 +15549,16 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$25baf9', $25baf9);
+            api.createRecord('$9b8df3', $9b8df3);
           } else {
-            api.reload('$25baf9', $25baf9);
+            api.reload('$9b8df3', $9b8df3);
           }
         }
 
         
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
       }
     })();
-},{"../services/data.json":"services/data.json","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
+},{"../services/data.json":"services/data.json","../services/GameService.js":"services/GameService.js","./../assets/img/heros.mp3":[["heros.4b9ce738.mp3","assets/img/heros.mp3"],"assets/img/heros.mp3"],"./../assets/img/beach.mp4":[["beach.d6f875c6.mp4","assets/img/beach.mp4"],"assets/img/beach.mp4"],"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Win.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15384,21 +15576,21 @@ exports.default = void 0;
 //
 var _default = {};
 exports.default = _default;
-        var $6abff6 = exports.default || module.exports;
+        var $cf0835 = exports.default || module.exports;
       
-      if (typeof $6abff6 === 'function') {
-        $6abff6 = $6abff6.options;
+      if (typeof $cf0835 === 'function') {
+        $cf0835 = $cf0835.options;
       }
     
         /* template */
-        Object.assign($6abff6, (function () {
+        Object.assign($cf0835, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "win" },
     [
       _c("h1", [
         _vm._v(
@@ -15408,11 +15600,11 @@ exports.default = _default;
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c("router-link", { staticClass: "button", attrs: { to: "/home" } }, [
+      _c("router-link", { staticClass: "buttoon", attrs: { to: "/home" } }, [
         _vm._v("Rejouer")
       ]),
       _vm._v(" "),
-      _c("router-link", { staticClass: "button", attrs: { to: "/" } }, [
+      _c("router-link", { staticClass: "buttoon", attrs: { to: "/" } }, [
         _vm._v("Quitter")
       ])
     ],
@@ -15439,9 +15631,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$6abff6', $6abff6);
+            api.createRecord('$cf0835', $cf0835);
           } else {
-            api.reload('$6abff6', $6abff6);
+            api.reload('$cf0835', $cf0835);
           }
         }
 
@@ -15465,25 +15657,26 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {};
 exports.default = _default;
-        var $e54826 = exports.default || module.exports;
+        var $aec77f = exports.default || module.exports;
       
-      if (typeof $e54826 === 'function') {
-        $e54826 = $e54826.options;
+      if (typeof $aec77f === 'function') {
+        $aec77f = $aec77f.options;
       }
     
         /* template */
-        Object.assign($e54826, (function () {
+        Object.assign($aec77f, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "Lost" },
     [
-      _c("h1", [_vm._v("Hahaha Lost")]),
+      _vm._m(0),
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
@@ -15500,7 +15693,18 @@ exports.default = _default;
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", { staticClass: "lostTitle" }, [
+      _vm._v("Vous n'avez pas réussi a atteindre votre mission ! "),
+      _c("br"),
+      _vm._v(" Retentez votre chance !\n  ")
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -15520,9 +15724,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$e54826', $e54826);
+            api.createRecord('$aec77f', $aec77f);
           } else {
-            api.reload('$e54826', $e54826);
+            api.reload('$aec77f', $aec77f);
           }
         }
 
@@ -15623,7 +15827,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63764" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60617" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

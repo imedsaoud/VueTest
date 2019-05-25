@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro&display=swap");
 html,
 body,
 div,
@@ -139,28 +139,164 @@ button,
 input,
 select,
 textarea {
-  font-family: "Roboto";
+  font-family: "Advent Pro", sans-serif;
 }
 
 .big-header {
-  background-color: #0de595;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   color: white;
+  font-size: 25px;
 }
 
 .button {
-  color: #0de595;
+  color: white;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 15px;
   display: inline-block;
   border: none;
+  flex-wrap: wrap;
+  background-image: url("/images.89b676b1.jpeg");
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.buttonChoice {
+  display: flex;
+  flex-flow: column;
+}
+
+.title {
+  width: 800px;
+  background-image: url("/images.89b676b1.jpeg");
+  padding: 17px;
+}
+
+.text {
+  margin-top: 80vh;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.big-headers {
+  background-image: url("/Bear-Grylls.f7d42df6.jpeg");
+  background-size: 100%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.big-headers h1 {
+  font-size: 50px;
+  padding: 40px;
+}
+.big-headers p {
+  font-size: 15px;
+}
+.big-headers .img {
+  justify-content: flex-start;
+  width: 750px;
+  height: 400px;
+}
+
+.Lost {
+  background-image: url("/lostt.cfe3f827.jpg");
+  color: white;
+  font-size: 40px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 0vh;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lostTitle {
+  background-image: url("/images.89b676b1.jpeg");
+}
+
+.win {
+  background-image: url("/win.c55cbda5.jpg");
+  background-size: 100%;
+  color: white;
+  justify-content: center;
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.win .buttoon {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  flex-wrap: wrap;
+  background-image: url("/images.89b676b1.jpeg");
+}
+.win h1 {
+  padding-top: 40vh;
+}
+
+.slode-leave-active::after,
+.slode-enter-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100vh);
+  background: black;
+  z-index: 3;
+}
+
+.slode-leave-active {
+  animation: fake 1s;
+}
+.slode-leave-active::after {
+  animation: slodeLeave 1s;
+}
+
+.slode-enter-active {
+  animation: fake 2s;
+}
+.slode-enter-active::after {
+  animation: slodeEnter 1s ease 1s;
 }
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */
